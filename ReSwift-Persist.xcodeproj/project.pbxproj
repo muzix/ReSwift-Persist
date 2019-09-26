@@ -8,17 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		84039AE5233D386100C4E3ED /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84039AE4233D386100C4E3ED /* ReSwift.framework */; };
-		84039AE8233D3A2B00C4E3ED /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 84039AE6233D3A2A00C4E3ED /* CHANGELOG.md */; };
-		84039AE9233D3A2B00C4E3ED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 84039AE7233D3A2A00C4E3ED /* README.md */; };
 		846FC32623241CE5008243C5 /* ReSwift_Persist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846FC31C23241CE5008243C5 /* ReSwift_Persist.framework */; };
 		846FC32D23241CE5008243C5 /* ReSwift_Persist.h in Headers */ = {isa = PBXBuildFile; fileRef = 846FC31F23241CE5008243C5 /* ReSwift_Persist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		846FC33F23241E36008243C5 /* SwiftLintRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FC33E23241E36008243C5 /* SwiftLintRunner.swift */; };
 		846FC34123241E36008243C5 /* ReSwift_Persist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846FC31C23241CE5008243C5 /* ReSwift_Persist.framework */; };
 		846FC34923241ED5008243C5 /* PersistStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FC34823241ED5008243C5 /* PersistStore.swift */; };
 		846FC34B23241EE1008243C5 /* PersistReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FC34A23241EE1008243C5 /* PersistReducer.swift */; };
-		846FC34D23241EF3008243C5 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FC34C23241EF3008243C5 /* Types.swift */; };
+		846FC34D23241EF3008243C5 /* PersistState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FC34C23241EF3008243C5 /* PersistState.swift */; };
 		846FC35023241F9A008243C5 /* PerformanceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FC34F23241F9A008243C5 /* PerformanceTest.swift */; };
-		846FC352232420A8008243C5 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = 846FC351232420A8008243C5 /* IDETemplateMacros.plist */; };
+		84CFE549233D479400B6B9CC /* ReSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84039AE4233D386100C4E3ED /* ReSwift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84CFE54B23412F4900B6B9CC /* PersistConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CFE54A23412F4900B6B9CC /* PersistConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +37,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		84CFE548233D478B00B6B9CC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84CFE549233D479400B6B9CC /* ReSwift.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		84039AE4233D386100C4E3ED /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		84039AE6233D3A2A00C4E3ED /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -52,10 +64,10 @@
 		846FC34023241E36008243C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846FC34823241ED5008243C5 /* PersistStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistStore.swift; sourceTree = "<group>"; };
 		846FC34A23241EE1008243C5 /* PersistReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistReducer.swift; sourceTree = "<group>"; };
-		846FC34C23241EF3008243C5 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		846FC34C23241EF3008243C5 /* PersistState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistState.swift; sourceTree = "<group>"; };
 		846FC34E23241F9A008243C5 /* ReSwift-PersistTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReSwift-PersistTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		846FC34F23241F9A008243C5 /* PerformanceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTest.swift; sourceTree = "<group>"; };
-		846FC351232420A8008243C5 /* IDETemplateMacros.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = IDETemplateMacros.plist; path = ../../../../Desktop/IDETemplateMacros.plist; sourceTree = "<group>"; };
+		84CFE54A23412F4900B6B9CC /* PersistConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +136,8 @@
 				846FC32023241CE5008243C5 /* Info.plist */,
 				846FC34823241ED5008243C5 /* PersistStore.swift */,
 				846FC34A23241EE1008243C5 /* PersistReducer.swift */,
-				846FC34C23241EF3008243C5 /* Types.swift */,
+				846FC34C23241EF3008243C5 /* PersistState.swift */,
+				84CFE54A23412F4900B6B9CC /* PersistConfig.swift */,
 			);
 			path = "ReSwift-Persist";
 			sourceTree = "<group>";
@@ -143,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				846FC33E23241E36008243C5 /* SwiftLintRunner.swift */,
-				846FC351232420A8008243C5 /* IDETemplateMacros.plist */,
 				846FC34023241E36008243C5 /* Info.plist */,
 			);
 			path = SwiftLintRunner;
@@ -188,6 +200,7 @@
 				846FC32123241CE5008243C5 /* Sources */,
 				846FC32223241CE5008243C5 /* Frameworks */,
 				846FC32323241CE5008243C5 /* Resources */,
+				84CFE548233D478B00B6B9CC /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -265,8 +278,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84039AE9233D3A2B00C4E3ED /* README.md in Resources */,
-				84039AE8233D3A2B00C4E3ED /* CHANGELOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +292,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846FC352232420A8008243C5 /* IDETemplateMacros.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,8 +323,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846FC34D23241EF3008243C5 /* Types.swift in Sources */,
+				846FC34D23241EF3008243C5 /* PersistState.swift in Sources */,
 				846FC34923241ED5008243C5 /* PersistStore.swift in Sources */,
+				84CFE54B23412F4900B6B9CC /* PersistConfig.swift in Sources */,
 				846FC34B23241EE1008243C5 /* PersistReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,9 +491,9 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DVKU24JC97;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -499,10 +510,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hoangph.ReSwift-Persist";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -511,9 +525,9 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DVKU24JC97;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -530,9 +544,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hoangph.ReSwift-Persist";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -541,8 +558,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DVKU24JC97;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ReSwift-PersistTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -551,10 +569,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hoangph.ReSwift-PersistTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "ReSwift-PersistTests/ReSwift-PersistTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -563,8 +584,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DVKU24JC97;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ReSwift-PersistTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -573,9 +595,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hoangph.ReSwift-PersistTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "ReSwift-PersistTests/ReSwift-PersistTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -583,8 +608,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DVKU24JC97;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftLintRunner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -594,6 +620,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoangph.SwiftLintRunner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -603,8 +630,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DVKU24JC97;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftLintRunner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -614,6 +642,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoangph.SwiftLintRunner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "846FC31B23241CE5008243C5"
-               BuildableName = "ReSwift_Persist.framework"
-               BlueprintName = "ReSwift-Persist"
-               ReferencedContainer = "container:ReSwift-Persist.xcodeproj">
+               BlueprintIdentifier = "84CFE572234131B400B6B9CC"
+               BuildableName = "SimpleTodo.app"
+               BlueprintName = "SimpleTodo"
+               ReferencedContainer = "container:SimpleTodo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,21 +31,7 @@
                BlueprintIdentifier = "846FC33B23241E36008243C5"
                BuildableName = "SwiftLintRunner.xctest"
                BlueprintName = "SwiftLintRunner"
-               ReferencedContainer = "container:ReSwift-Persist.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "846FC32423241CE5008243C5"
-               BuildableName = "ReSwift-PersistTests.xctest"
-               BlueprintName = "ReSwift-PersistTests"
-               ReferencedContainer = "container:ReSwift-Persist.xcodeproj">
+               ReferencedContainer = "container:../../ReSwift-Persist.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -56,24 +42,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "846FC32423241CE5008243C5"
-               BuildableName = "ReSwift-PersistTests.xctest"
-               BlueprintName = "ReSwift-PersistTests"
-               ReferencedContainer = "container:ReSwift-Persist.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "846FC31B23241CE5008243C5"
-            BuildableName = "ReSwift_Persist.framework"
-            BlueprintName = "ReSwift-Persist"
-            ReferencedContainer = "container:ReSwift-Persist.xcodeproj">
+            BlueprintIdentifier = "84CFE572234131B400B6B9CC"
+            BuildableName = "SimpleTodo.app"
+            BlueprintName = "SimpleTodo"
+            ReferencedContainer = "container:SimpleTodo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -89,15 +65,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "846FC31B23241CE5008243C5"
-            BuildableName = "ReSwift_Persist.framework"
-            BlueprintName = "ReSwift-Persist"
-            ReferencedContainer = "container:ReSwift-Persist.xcodeproj">
+            BlueprintIdentifier = "84CFE572234131B400B6B9CC"
+            BuildableName = "SimpleTodo.app"
+            BlueprintName = "SimpleTodo"
+            ReferencedContainer = "container:SimpleTodo.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -107,15 +84,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "846FC31B23241CE5008243C5"
-            BuildableName = "ReSwift_Persist.framework"
-            BlueprintName = "ReSwift-Persist"
-            ReferencedContainer = "container:ReSwift-Persist.xcodeproj">
+            BlueprintIdentifier = "84CFE572234131B400B6B9CC"
+            BuildableName = "SimpleTodo.app"
+            BlueprintName = "SimpleTodo"
+            ReferencedContainer = "container:SimpleTodo.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
