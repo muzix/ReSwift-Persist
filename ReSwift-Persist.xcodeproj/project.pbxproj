@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84039AE5233D386100C4E3ED /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84039AE4233D386100C4E3ED /* ReSwift.framework */; };
 		846FC32623241CE5008243C5 /* ReSwift_Persist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846FC31C23241CE5008243C5 /* ReSwift_Persist.framework */; };
 		846FC32D23241CE5008243C5 /* ReSwift_Persist.h in Headers */ = {isa = PBXBuildFile; fileRef = 846FC31F23241CE5008243C5 /* ReSwift_Persist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		846FC33F23241E36008243C5 /* SwiftLintRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FC33E23241E36008243C5 /* SwiftLintRunner.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84039AE4233D386100C4E3ED /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		846FC31C23241CE5008243C5 /* ReSwift_Persist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReSwift_Persist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		846FC31F23241CE5008243C5 /* ReSwift_Persist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReSwift_Persist.h; sourceTree = "<group>"; };
 		846FC32023241CE5008243C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84039AE5233D386100C4E3ED /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84039AE3233D386000C4E3ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84039AE4233D386100C4E3ED /* ReSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		846FC31223241CE5008243C5 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +97,7 @@
 				846FC32923241CE5008243C5 /* ReSwift-PersistTests */,
 				846FC33D23241E36008243C5 /* SwiftLintRunner */,
 				846FC31D23241CE5008243C5 /* Products */,
+				84039AE3233D386000C4E3ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -466,6 +478,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ReSwift-Persist/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -493,6 +509,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ReSwift-Persist/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
