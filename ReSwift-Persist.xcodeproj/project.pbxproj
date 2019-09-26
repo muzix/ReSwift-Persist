@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		84039AE5233D386100C4E3ED /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84039AE4233D386100C4E3ED /* ReSwift.framework */; };
+		84039AE8233D3A2B00C4E3ED /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 84039AE6233D3A2A00C4E3ED /* CHANGELOG.md */; };
+		84039AE9233D3A2B00C4E3ED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 84039AE7233D3A2A00C4E3ED /* README.md */; };
 		846FC32623241CE5008243C5 /* ReSwift_Persist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846FC31C23241CE5008243C5 /* ReSwift_Persist.framework */; };
 		846FC32D23241CE5008243C5 /* ReSwift_Persist.h in Headers */ = {isa = PBXBuildFile; fileRef = 846FC31F23241CE5008243C5 /* ReSwift_Persist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		846FC33F23241E36008243C5 /* SwiftLintRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FC33E23241E36008243C5 /* SwiftLintRunner.swift */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		84039AE4233D386100C4E3ED /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		84039AE6233D3A2A00C4E3ED /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		84039AE7233D3A2A00C4E3ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		846FC31C23241CE5008243C5 /* ReSwift_Persist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReSwift_Persist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		846FC31F23241CE5008243C5 /* ReSwift_Persist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReSwift_Persist.h; sourceTree = "<group>"; };
 		846FC32023241CE5008243C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 		846FC31223241CE5008243C5 = {
 			isa = PBXGroup;
 			children = (
+				84039AE6233D3A2A00C4E3ED /* CHANGELOG.md */,
+				84039AE7233D3A2A00C4E3ED /* README.md */,
 				846FC31E23241CE5008243C5 /* ReSwift-Persist */,
 				846FC32923241CE5008243C5 /* ReSwift-PersistTests */,
 				846FC33D23241E36008243C5 /* SwiftLintRunner */,
@@ -259,6 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84039AE9233D3A2B00C4E3ED /* README.md in Resources */,
+				84039AE8233D3A2B00C4E3ED /* CHANGELOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
