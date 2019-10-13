@@ -12,10 +12,12 @@ public class PersistStore<State: PersistState>: Store<State> {
     public convenience init(config: PersistConfig,
                             reducer: @escaping Reducer<State>,
                             state: State?,
-                            middleware: [Middleware<State>] = []) {
+                            middleware: [Middleware<State>] = [],
+                            automaticallySkipsRepeats: Bool = true) {
         self.init(reducer: persistReducer(config: config, baseReducer: reducer),
                   state: state,
-                  middleware: middleware)
+                  middleware: middleware,
+                  automaticallySkipsRepeats: automaticallySkipsRepeats)
     }
 
     required init(reducer: @escaping Reducer<State>,

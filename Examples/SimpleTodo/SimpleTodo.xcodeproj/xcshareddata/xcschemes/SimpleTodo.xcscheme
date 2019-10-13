@@ -34,6 +34,20 @@
                ReferencedContainer = "container:../../ReSwift-Persist.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "846FC32423241CE5008243C5"
+               BuildableName = "ReSwift-PersistTests.xctest"
+               BlueprintName = "ReSwift-PersistTests"
+               ReferencedContainer = "container:../../ReSwift-Persist.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -42,6 +56,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "846FC32423241CE5008243C5"
+               BuildableName = "ReSwift-PersistTests.xctest"
+               BlueprintName = "ReSwift-PersistTests"
+               ReferencedContainer = "container:../../ReSwift-Persist.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

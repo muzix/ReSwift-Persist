@@ -27,7 +27,7 @@ func persistReducer<State: PersistState>(
             let newState = baseReducer(action, state)
 
             // Should skip persist step ?
-            if let state = state, newState.shouldSkipPersist(state) {
+            if let state = state, state.shouldSkipPersist(newState) {
                 return newState
             }
 

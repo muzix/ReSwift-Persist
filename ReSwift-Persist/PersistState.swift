@@ -17,8 +17,8 @@ public protocol PersistableState {
 }
 
 public extension PersistableState where Self: Equatable {
-    func shouldSkipPersist(_ state: Self) -> Bool {
-        return self == state
+    func shouldSkipPersist(_ newState: Self) -> Bool {
+        return self == newState
     }
 }
 

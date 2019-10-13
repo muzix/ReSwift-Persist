@@ -18,6 +18,7 @@
 		846FC35023241F9A008243C5 /* PerformanceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FC34F23241F9A008243C5 /* PerformanceTest.swift */; };
 		84CFE549233D479400B6B9CC /* ReSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84039AE4233D386100C4E3ED /* ReSwift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		84CFE54B23412F4900B6B9CC /* PersistConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CFE54A23412F4900B6B9CC /* PersistConfig.swift */; };
+		84CFE5A72353A59E00B6B9CC /* PersistReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CFE5A62353A59E00B6B9CC /* PersistReducerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		846FC34E23241F9A008243C5 /* ReSwift-PersistTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReSwift-PersistTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		846FC34F23241F9A008243C5 /* PerformanceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTest.swift; sourceTree = "<group>"; };
 		84CFE54A23412F4900B6B9CC /* PersistConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistConfig.swift; sourceTree = "<group>"; };
+		84CFE5A62353A59E00B6B9CC /* PersistReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistReducerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				846FC32C23241CE5008243C5 /* Info.plist */,
+				84CFE5A62353A59E00B6B9CC /* PersistReducerTests.swift */,
 				846FC34F23241F9A008243C5 /* PerformanceTest.swift */,
 				846FC34E23241F9A008243C5 /* ReSwift-PersistTests-Bridging-Header.h */,
 			);
@@ -335,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				846FC35023241F9A008243C5 /* PerformanceTest.swift in Sources */,
+				84CFE5A72353A59E00B6B9CC /* PersistReducerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +565,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = "ReSwift-PersistTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -587,6 +592,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = "ReSwift-PersistTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
