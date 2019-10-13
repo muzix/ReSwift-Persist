@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
   spec.version      = "0.1.0"
   spec.summary      = "Data persistence for ReSwift"
   spec.description  = <<-DESC
-                      ReSwift-Persist allow you to save ReSwift state into local storage and restore it back at the next app launch. Inspired by Redux-persist.
+                      ReSwift-Persist automatically persist/rehydrate ReSwift app state as JSON file. Inspired by Redux-persist.
                       DESC
 
   spec.homepage     = "https://github.com/muzix/ReSwift-Persist"
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
     "muzix" => "phamhuuhoang1210@gmail.com"
   }
 
-  spec.module_name  = "ReSwift-Persist"
+  spec.module_name  = "ReSwift_Persist"
   spec.source = {
     :git => "https://github.com/muzix/ReSwift-Persist.git",
     :tag => spec.version.to_s }
@@ -23,5 +23,5 @@ Pod::Spec.new do |spec|
   spec.requires_arc     = true
   spec.source_files     = 'ReSwift-Persist/**/*'
 
-  spec.dependency "ReSwift", "~> 5.0.0"
+  spec.dependency "ReSwift", "~> 4.0.0"
 end
