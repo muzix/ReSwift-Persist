@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
   spec.swift_versions = ["5.0", "4.2"]
 
   spec.requires_arc     = true
-  spec.source_files     = 'ReSwift-Persist/**/*'
+  spec.source_files     = 'ReSwift-Persist/Source/**/*'
 
-  spec.dependency "ReSwift", "~> 4.0.0"
+  spec.dependency "ReSwift", "~> 4.1.1"
 end
