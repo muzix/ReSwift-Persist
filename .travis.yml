@@ -9,13 +9,10 @@ env:
 matrix:
   include:
     - osx_image: xcode10.2
-      env: SCHEME="iOS" SDK="iphonesimulator" DESTINATION="OS=12.0,name=iPhone 8" SWIFT_VERSION="5.0" ACTION="test" POD_LINT="YES"
+      env: SCHEME="iOS" SDK="iphonesimulator" DESTINATION="OS=12.0,name=iPhone 8" SWIFT_VERSION="5.0" ACTION="test"
 
 before_install:
-  - if [ $POD_LINT == "YES" ]; then
-    gem install cocoapods -v '1.7.5';
-    pod repo update;
-    fi
+  - gem install cocoapods -v '1.7.5'
   - carthage bootstrap --platform "$SCHEME" --verbose
 
 install:
@@ -36,9 +33,7 @@ script:
     GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES
     GCC_GENERATE_TEST_COVERAGE_FILES=YES
     SWIFT_VERSION=$SWIFT_VERSION
-  - if [ $POD_LINT == "YES" ]; then
-    pod lib lint --verbose;
-    fi
+  - pod lib lint --verbose
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -J ReSwift-Persist
