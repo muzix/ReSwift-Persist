@@ -1,0 +1,6 @@
+coverage:
+  ignore:
+    - ReSwift-PersistTests
+    - SwiftLintRunner
+    - Examples
+    - Carthage
