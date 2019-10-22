@@ -15,9 +15,8 @@
 		84B48D402353D0AA0091C282 /* PersistConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B48D3B2353D0AA0091C282 /* PersistConfig.swift */; };
 		84B48D412353D0AA0091C282 /* PersistReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B48D3C2353D0AA0091C282 /* PersistReducer.swift */; };
 		84B48D422353D0AA0091C282 /* PersistStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B48D3D2353D0AA0091C282 /* PersistStore.swift */; };
-		84B48D432353D0AA0091C282 /* ReSwift_Persist.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B48D3E2353D0AA0091C282 /* ReSwift_Persist.h */; };
 		84B48D442353D0AA0091C282 /* PersistState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B48D3F2353D0AA0091C282 /* PersistState.swift */; };
-		84B48D462353D0C60091C282 /* ReSwift_Persist.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B48D452353D0C60091C282 /* ReSwift_Persist.h */; };
+		84B48D462353D0C60091C282 /* ReSwift_Persist.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B48D452353D0C60091C282 /* ReSwift_Persist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84CFE549233D479400B6B9CC /* ReSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84039AE4233D386100C4E3ED /* ReSwift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		84CFE5A72353A59E00B6B9CC /* PersistReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CFE5A62353A59E00B6B9CC /* PersistReducerTests.swift */; };
 /* End PBXBuildFile section */
@@ -68,7 +67,6 @@
 		84B48D3B2353D0AA0091C282 /* PersistConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistConfig.swift; sourceTree = "<group>"; };
 		84B48D3C2353D0AA0091C282 /* PersistReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistReducer.swift; sourceTree = "<group>"; };
 		84B48D3D2353D0AA0091C282 /* PersistStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistStore.swift; sourceTree = "<group>"; };
-		84B48D3E2353D0AA0091C282 /* ReSwift_Persist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReSwift_Persist.h; sourceTree = "<group>"; };
 		84B48D3F2353D0AA0091C282 /* PersistState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistState.swift; sourceTree = "<group>"; };
 		84B48D452353D0C60091C282 /* ReSwift_Persist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReSwift_Persist.h; sourceTree = "<group>"; };
 		84CFE5A62353A59E00B6B9CC /* PersistReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistReducerTests.swift; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 				84B48D3B2353D0AA0091C282 /* PersistConfig.swift */,
 				84B48D3C2353D0AA0091C282 /* PersistReducer.swift */,
 				84B48D3D2353D0AA0091C282 /* PersistStore.swift */,
-				84B48D3E2353D0AA0091C282 /* ReSwift_Persist.h */,
 				84B48D3F2353D0AA0091C282 /* PersistState.swift */,
 			);
 			path = Source;
@@ -183,7 +180,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B48D462353D0C60091C282 /* ReSwift_Persist.h in Headers */,
-				84B48D432353D0AA0091C282 /* ReSwift_Persist.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,7 +528,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = x86_64;
+				VALID_ARCHS = "armv7s armv7 arm64e arm64";
 			};
 			name = Debug;
 		};
@@ -565,7 +561,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = x86_64;
+				VALID_ARCHS = "armv7s armv7 arm64e arm64";
 			};
 			name = Release;
 		};

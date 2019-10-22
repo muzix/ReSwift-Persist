@@ -135,7 +135,6 @@ class PersistReducerTests: XCTestCase {
         clean()
     }
 
-
     func test_data_migration_successfully() {
         clean()
         initializeStore()
